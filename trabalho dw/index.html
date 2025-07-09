@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador F1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    </head>
+  <body>
+    <h1>Simulador de Desempenho de Pilotos de F1</h1>
+    <div class="tudo">
+      <div class="labels">
+        <label for="piloto">Escolha o piloto:</label>
+        <div class="custom-select-wrapper">
+          <select id="piloto"></select>
+          </div>
+
+        <label for="equipe">Escolha a equipe:</label>
+        <div class="custom-select-wrapper">
+          <select id="equipe"></select>
+          </div>
+
+        <label for="circuito">Escolha o circuito:</label>
+        <div class="custom-select-wrapper">
+          <select id="circuito"></select>
+          </div>
+
+        <div class="butao">
+          <button onclick="calcularDesempenho()">Calcular Desempenho</button>
+          </div>
+        <div id="resultado"></div>
+      </div>
+      
+      <div id="imagens-container" class="imagens">
+        <img id="imgPiloto" class="imagem1" src="" alt="Imagem do piloto" />
+        <img id="imgEquipe" class="imagem2" src="" alt="Imagem da equipe" />
+        <img id="imgCircuito" class="imagem3" src="" alt="Imagem do circuito" />
+        </div>
+    </div>
+
+    <audio id="somCarro" src="audio\F1 Radio - Notification Sound.mp3"></audio>
+    <audio id="musicaFundo" src="audio\Synthwave Vibe.mp3" loop></audio>
+
+    <script src="script.js"></script>
+    </body>
+</html>
